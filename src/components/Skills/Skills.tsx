@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Skills.module.css";
 import {
     FaReact,
@@ -9,7 +8,7 @@ import {
     FaGithub,
     FaPython,
 } from "react-icons/fa";
-import { SiTypescript, SiRedux, SiPostgresql, SiGitlab, SiApollographql, SiPostman, SiFigma, SiJira} from "react-icons/si";
+import { SiTypescript, SiRedux, SiPostgresql, SiGitlab, SiApollographql, SiPostman, SiFigma, SiJira, SiSwagger, SiVite} from "react-icons/si";
 import { MdApi } from "react-icons/md";
 
 const skills = [
@@ -22,8 +21,10 @@ const skills = [
     { name: "GitHub", icon: <FaGithub color="#333" /> },
     { name: "GitLab", icon: <SiGitlab color="#FC6D26" /> },
     { name: "Postman", icon: <SiPostman color="#FF6C37" /> },
-    // { name: "REST API", icon: <MdApi color="#4CAF50" /> },
+    { name: "REST API", icon: <MdApi color="#4CAF50" /> },
     { name: "API", icon: <SiApollographql color="#311C87" /> },
+    { name: "Vite", icon: <SiVite color="#F7D42B" /> },
+    { name: "Swagger", icon: <SiSwagger color="#489E35" /> },
     { name: "Redux", icon: <SiRedux color="#764abc" /> },
     { name: "Figma", icon: <SiFigma color="#F24E1E" /> },
     { name: "Jira", icon: <SiJira color="#0052CC" /> },

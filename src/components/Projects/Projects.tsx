@@ -1,4 +1,3 @@
-import React from 'react';
 import Project from './Project/Project.tsx';
 import styles from './Projects.module.css';
 import internshipsImg from '../../assets/projects/portfolio/portfolio.png';

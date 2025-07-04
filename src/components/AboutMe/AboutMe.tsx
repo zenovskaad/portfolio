@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './AboutMe.module.css';
 import myPhoto from '../../assets/myPhoto.jpg';
 import { TiArrowDownThick } from "react-icons/ti";

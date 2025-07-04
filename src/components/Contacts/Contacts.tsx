@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Contacts.module.css';
 import { FaTelegramPlane, FaEnvelope, FaPhone, FaGithub, FaVk } from 'react-icons/fa';
 

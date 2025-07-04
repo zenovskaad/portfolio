@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './experience.module.css';
 import Job from './Job/Job.tsx';
 
