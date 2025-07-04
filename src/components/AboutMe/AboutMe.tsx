@@ -21,13 +21,9 @@ export default function AboutMe() {
                         <li><strong>Telegram:</strong> @DafaSun</li>
                         <li><strong>GitHub:</strong> <a href="https://github.com/DafaSun" target="_blank" rel="noreferrer">github.com/DafaSun</a></li>
                     </ul>
-                    {/*<button className={styles.downloadResumeBtn}>*/}
-                    {/*    <TiArrowDownThick />*/}
-                    {/*    <span>Загрузить резюме</span>*/}
-                    {/*</button>*/}
 
                     <a
-                        href="/Zenovskaia_Daria_resume_React-developer.pdf"
+                        href="/portfolio/Zenovskaia_Daria_resume_React-developer.pdf"
                         download="Zenovskaia_Daria_resume_React-developer.pdf"
                         className={styles.downloadResumeBtn}
                         onClick={() => {
