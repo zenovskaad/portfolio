@@ -1,0 +1,35 @@
+.skills {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: #222;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.item:hover {
+    background-color: #cce4ff;
+}
