@@ -1,67 +1,39 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Contacts.module.css';
+import { FaTelegramPlane, FaEnvelope, FaPhone, FaGithub, FaVk } from 'react-icons/fa';
 
 export default function Contacts() {
-    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [submitted, setSubmitted] = useState(false);
-
-    const handleChange = (e) => {
-        setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Тут можно добавить логику отправки через EmailJS или другую систему
-        setSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
-    };
-
     return (
-        <div className={styles.contact}>
+        <div className={styles.contacts}>
             <h2 className={styles.title}>Контакты</h2>
+            <div className={styles.contactGrid}>
+                <a href="https://t.me/DafaSun" target="_blank" className={styles.contactItem} rel="noreferrer">
+                    <FaTelegramPlane className={`${styles.icon} ${styles.telegram}`} />
+                    <span>@DafaSun</span>
+                </a>
 
-            <div className={styles.info}>
-                <p>Email: <a href="mailto:dafasun97531@gmail.com">dafasun97531@gmail.com</a></p>
-                <p>Телефон: <a href="tel:+79502588011">+7 950 258 80 11</a></p>
-                <p>
-                    Соцсети:
-                    <a href="https://t.me/dafasun" target="_blank" rel="noopener noreferrer"> Telegram</a> |
-                    <a href="https://github.com/dafasun" target="_blank" rel="noopener noreferrer"> GitHub</a> |
-                    <a href="https://linkedin.com/in/dafasun" target="_blank" rel="noopener noreferrer"> LinkedIn</a> |
-                    <a href="https://vk.com/dafasun" target="_blank" rel="noopener noreferrer"> Вконтакте</a>
-                </p>
+                <a href="mailto:dafasun97531@gmail.com" className={styles.contactItem}>
+                    <FaEnvelope className={`${styles.icon} ${styles.email}`} />
+                    <span>dafasun97531@gmail.com</span>
+                </a>
+
+                <a href="https://vk.com/dafasun" target="_blank" className={styles.contactItem} rel="noreferrer">
+                    <FaVk className={`${styles.icon} ${styles.vk}`} />
+                    <span>VK</span>
+                </a>
             </div>
 
-            <form onSubmit={handleSubmit} className={styles.form}>
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Имя"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className={styles.input}
-                />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className={styles.input}
-                />
-                <textarea
-                    name="message"
-                    placeholder="Сообщение"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    className={styles.textarea}
-                />
-                <button type="submit" className={styles.button}>Отправить</button>
-                {submitted && <p className={styles.thanks}>Спасибо! Ваше сообщение отправлено.</p>}
-            </form>
+            <div className={styles.contactGrid}>
+                <a href="https://github.com/DafaSun" target="_blank" className={styles.contactItem} rel="noreferrer">
+                    <FaGithub className={`${styles.icon} ${styles.github}`} />
+                    <span>GitHub</span>
+                </a>
+
+                <div className={styles.contactItem}>
+                    <FaPhone className={`${styles.icon} ${styles.phone}`} />
+                    <span>+7 (950) 258-80-11</span>
+                </div>
+            </div>
         </div>
     );
 }

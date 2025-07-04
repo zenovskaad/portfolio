@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './AboutMe.module.css';
-import myPhoto from '../../assets/myphoto.png';
+import myPhoto from '../../assets/myPhoto.jpg';
+import { TiArrowDownThick } from "react-icons/ti";
 
 export default function AboutMe() {
     return (
@@ -11,7 +12,7 @@ export default function AboutMe() {
                 </div>
 
                 <div className={styles.infoBlock}>
-                    <h3 className={styles.name}>Зеновская Дарья Андреевна</h3>
+                    <h3 className={styles.name}><strong>Зеновская Дарья Андреевна</strong></h3>
                     <ul className={styles.infoList}>
                         <li><strong>Дата рождения:</strong> 10 февраля 2003</li>
                         <li><strong>Пол:</strong> Женщина</li>
@@ -21,6 +22,27 @@ export default function AboutMe() {
                         <li><strong>Telegram:</strong> @DafaSun</li>
                         <li><strong>GitHub:</strong> <a href="https://github.com/DafaSun" target="_blank" rel="noreferrer">github.com/DafaSun</a></li>
                     </ul>
+                    {/*<button className={styles.downloadResumeBtn}>*/}
+                    {/*    <TiArrowDownThick />*/}
+                    {/*    <span>Загрузить резюме</span>*/}
+                    {/*</button>*/}
+
+                    <a
+                        href="/Zenovskaia_Daria_resume_React-developer.pdf"
+                        download="Zenovskaia_Daria_resume_React-developer.pdf"
+                        className={styles.downloadResumeBtn}
+                        onClick={() => {
+                            const btn = document.querySelector(`.${styles.downloadResumeBtn}`);
+                            btn?.classList.add(styles.loading);
+
+                            setTimeout(() => {
+                                btn?.classList.remove(styles.loading);
+                            }, 1500); // Убираем анимацию через 1.5 секунды
+                        }}
+                    >
+                        <TiArrowDownThick />
+                        <span>Загрузить резюме</span>
+                    </a>
                 </div>
             </div>
 

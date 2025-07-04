@@ -1,49 +1,107 @@
-.about {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    color: #222;
-}
-
 .title {
-    font-size: 2rem;
     text-align: center;
     margin-bottom: 2.5rem;
 }
 
 .topBlock {
     display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+    gap: 5rem;
+    align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-
-.photoBlock, .infoBlock, .photo {
-    height: 300px;
+    margin-bottom: 1.7rem;
 }
 
 .photoBlock {
+    height: 100%;
     flex: 0 0 260px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    margin-left: 3rem;
 }
 
 .photo {
-    /*width: 260px;*/
-    /*object-fit: cover;*/
+    height: 400px;
+}
+
+.downloadResumeBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.2rem;
+    padding-right: 3rem;
+    font-size: 1rem;
+    border: none;
+    background-color: white;
+    color: #EA515E;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.downloadResumeBtn:hover {
+    background-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.downloadResumeBtn.loading {
+    background-color: white;
+    pointer-events: none;
+    position: relative;
+}
+
+.downloadResumeBtn.loading::after {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #EA515E;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.downloadResumeBtn{
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*gap: 1rem;*/
+    /*font-weight: 650;*/
+    /*font-size: 1.2rem;*/
+    /*padding: 0.7rem 1.5rem;*/
+    /*background-color: #fff;*/
+    /*border-radius: 12px;*/
+    /*box-shadow: 0 2px 8px rgba(0,0,0,0.07);*/
+    /*text-align: center;*/
+    /*transition: transform 0.2s ease;*/
+    /*margin-top: 1.5rem;*/
+    /*width: fit-content;*/
+    /*color: #EA515E;*/
+}
+
+.downloadResumeBtn :hover {
+    /*color: #BB363E;*/
 }
 
 .infoBlock {
+    height: fit-content;
     flex: 1 1 320px;
-    font-size: 1rem;
-    line-height: 1.3;
-    background-color: #f7f7f7;
+    line-height: 1.5;
     padding: 1.5rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
     text-align: left;
+    box-sizing: border-box;
+    font-size: 1.25rem;
 }
 
 .name {
@@ -65,7 +123,7 @@
 }
 
 .infoList a {
-    color: #007acc;
+    color: #326575;
     text-decoration: none;
 }
 
@@ -75,7 +133,7 @@
 
 .text {
     font-size: 1.1rem;
-    line-height: 1.3;
+    line-height: 1.7;
     text-align: justify;
 }
 

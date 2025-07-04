@@ -8,6 +8,8 @@ import Skills from "./components/Skills/Skills.tsx";
 import Projects from "./components/Projects/Projects.tsx";
 import Contacts from "./components/Contacts/Contacts.tsx";
 import Footer from "./components/Footer/Footer.tsx";
+import Education from "./components/Education/Education.tsx";
+import Experience from "./components/Expirience/Experience.tsx";
 
 function App() {
 
@@ -26,6 +28,14 @@ function App() {
 
                 <section id="skills">
                     <Skills/>
+                </section>
+
+                <section id="education">
+                    <Education />
+                </section>
+
+                <section id="experience">
+                    <Experience />
                 </section>
 
                 <section id="contact">

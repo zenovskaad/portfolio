@@ -1,0 +1,77 @@
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.titleBlock {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    color: #007acc;
+}
+
+.position {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.period {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.company {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 650;
+}
+
+.tasks {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.tasks li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.bullet {
+    margin-right: 0.5rem;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.stack {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #333;
+}

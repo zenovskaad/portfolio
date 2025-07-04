@@ -1,41 +1,29 @@
 import React from 'react';
+import Project from './Project/Project.tsx';
 import styles from './Projects.module.css';
-
-const projects = [
-    {
-        id: 1,
-        title: 'Портфолио на React',
-        description: 'Одностраничное приложение для демонстрации моих навыков и проектов.',
-        link: 'https://github.com/username/portfolio',
-    },
-    {
-        id: 2,
-        title: 'Todo App',
-        description: 'Простое приложение для управления задачами с использованием React и LocalStorage.',
-        link: 'https://github.com/username/todo-app',
-    },
-    {
-        id: 3,
-        title: 'Магазин на Vue',
-        description: 'Интернет-магазин с корзиной и фильтрацией товаров.',
-        link: 'https://github.com/username/vue-shop',
-    },
-];
+import internshipsImg from '../../assets/projects/portfolio/portfolio.png';
 
 export default function Projects() {
     return (
-        <div className={styles.projects}>
+        <div className={styles.projectsSection}>
             <h2 className={styles.title}>Проекты</h2>
-            <div className={styles.list}>
-                {projects.map(({ id, title, description, link }) => (
-                    <div key={id} className={styles.card}>
-                        <h3 className={styles.projectTitle}>{title}</h3>
-                        <p className={styles.description}>{description}</p>
-                        <a href={link} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                            Смотреть код
-                        </a>
-                    </div>
-                ))}
+
+            <div className={styles.grid}>
+                <Project
+                    title="Платформа стажировок"
+                    description="Веб-платформа для публикации и прохождения стажировок. Реализация личных кабинетов, адаптивная верстка, интеграция с API."
+                    stack={['React', 'TypeScript', 'Redux', 'CSS Modules']}
+                    link="https://example.com"
+                    image={internshipsImg}
+                />
+
+                <Project
+                    title="Сайт портфолио"
+                    description="Личный сайт-портфолио с анимацией, навигацией, разделами навыков, опыта и проектов."
+                    stack={['React', 'Vite', 'Tailwind CSS']}
+                    image={internshipsImg}
+                />
+
             </div>
         </div>
     );

@@ -2,16 +2,23 @@
   width: 100%;
   text-align: center;
   margin-top: 13vh;
+  font-family: 'Nunito', sans-serif;
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 section{
   width: 100%;
+}
+
+h2{
+  font-family: 'Great Vibes', cursive;
+  font-size: 6rem;
+  margin-top: -1rem;
 }
 
 @keyframes logo-spin {

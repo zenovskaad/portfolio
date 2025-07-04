@@ -10,10 +10,11 @@ export default function Footer() {
             <p>
                 <a href="https://github.com/dafasun" target="_blank" rel="noopener noreferrer" className={styles.link}>
                     GitHub
-                </a>{' | '}
-                <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className={styles.link}>
-                    LinkedIn
                 </a>
+                {/*{' | '}*/}
+                {/*<a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className={styles.link}>*/}
+                {/*    LinkedIn*/}
+                {/*</a>*/}
             </p>
         </footer>
     );
