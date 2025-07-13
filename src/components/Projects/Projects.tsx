@@ -1,29 +1,64 @@
 import Project from './Project/Project.tsx';
 import styles from './Projects.module.css';
-import internshipsImg from '../../assets/projects/portfolio/portfolio.png';
+import portfolioImg1 from '../../assets/projects/portfolio/img1.png';
+import portfolioImg2 from '../../assets/projects/portfolio/img2.png';
+import portfolioImg3 from '../../assets/projects/portfolio/img3.png';
+import todoImg from '../../assets/projects/todo/img.png';
+import aisImg1 from '../../assets/projects/ais/img1.jpg';
+import aisImg2 from '../../assets/projects/ais/img2.jpg';
+import aisImg3 from '../../assets/projects/ais/img3.jpg';
+import aisImg4 from '../../assets/projects/ais/img4.jpg';
+import aisImg5 from '../../assets/projects/ais/img5.jpg';
+import vkrImg1 from '../../assets/projects/vkr/img1.png';
+import vkrImg2 from '../../assets/projects/vkr/img2.png';
+import vkrImg3 from '../../assets/projects/vkr/img3.png';
+import vkrImg4 from '../../assets/projects/vkr/img4.png';
+
+const projectsList = [
+    {
+        title: 'Страницы аналитики в АИС',
+        description: 'Веб-страницы с отображением графиков, диаграмм по данным полученным из API-запросов.',
+        stack: ['React', 'TypeScript', 'Redux', 'CSS Modules', 'JSX', 'API'],
+        // codeLink: 'https://example.com',
+        // pageLink: 'https://example.com',
+        imagesList: [aisImg1, aisImg2, aisImg3, aisImg4, aisImg5],
+    },
+    {
+        title: 'Сайт портфолио',
+        description: 'Личный сайт-портфолио с анимацией, навигацией, разделами навыков, опыта и проектов.',
+        stack: ['React', 'TypeScript', 'Vite', 'CSS Modules', 'JSX'],
+        codeLink: 'https://github.com/DafaSun/portfolio',
+        pageLink: 'https://dafasun.github.io/portfolio/',
+        imagesList: [portfolioImg1, portfolioImg2, portfolioImg3],
+    },
+    {
+        title: 'Веб-приложение со списком задач',
+        description: 'Веб-приложение с возможностью добавления и удаления задач, фильтрации списка по статусам.',
+        stack: ['React', 'TypeScript', 'Vite', 'CSS Modules', 'JSX', 'Jest', 'Firebase'],
+        codeLink: 'https://github.com/DafaSun/todo-app',
+        pageLink: 'https://dafasun.github.io/portfolio/',
+        imagesList: [todoImg],
+    },
+    {
+        title: 'Система управления ЛПУ',
+        description: 'Автоматизированная система управления основными бизнес-процессами санатория: размещение и оказание мед.услуг',
+        stack: ['React', 'TypeScript', 'Vite', 'CSS Modules', 'JSX', 'API', 'Swagger'],
+        codeLink: 'https://github.com/DafaSun/vkr-frontend',
+        // pageLink: 'https://dafasun.github.io/portfolio/',
+        imagesList: [vkrImg1, vkrImg2, vkrImg3, vkrImg4],
+    },
+];
 
 export default function Projects() {
     return (
-        <div className={styles.projectsSection}>
+        <section className={styles.projectsSection}>
             <h2 className={styles.title}>Проекты</h2>
 
             <div className={styles.grid}>
-                <Project
-                    title="Платформа стажировок"
-                    description="Веб-платформа для публикации и прохождения стажировок. Реализация личных кабинетов, адаптивная верстка, интеграция с API."
-                    stack={['React', 'TypeScript', 'Redux', 'CSS Modules']}
-                    link="https://example.com"
-                    image={internshipsImg}
-                />
-
-                <Project
-                    title="Сайт портфолио"
-                    description="Личный сайт-портфолио с анимацией, навигацией, разделами навыков, опыта и проектов."
-                    stack={['React', 'Vite', 'Tailwind CSS']}
-                    image={internshipsImg}
-                />
-
+                {projectsList.map((project, index) => (
+                    <Project key={index} {...project} />
+                ))}
             </div>
-        </div>
+        </section>
     );
 }
