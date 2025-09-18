@@ -17,9 +17,9 @@ export default function AboutMe() {
                         <li><strong>Пол:</strong> Женщина</li>
                         <li><strong>Город:</strong> Красноборск</li>
                         <li><strong>Телефон:</strong> +7 (950) 258-8011</li>
-                        <li><strong>Email:</strong> dafasun97531@gmail.com</li>
-                        <li><strong>Telegram:</strong><a href="https://t.me/DafaSun" target="_blank" rel="noreferrer"> @DafaSun</a></li>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/DafaSun" target="_blank" rel="noreferrer">github.com/DafaSun</a></li>
+                        <li><strong>Email:</strong> zenovskaad@gmail.com</li>
+                        <li><strong>Telegram:</strong> <a href="https://t.me/zenovskaad" target="_blank" rel="noreferrer">@zenovskaad</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com/zenovskaad" target="_blank" rel="noreferrer">github.com/zenovskaad</a></li>
                     </ul>
 
                     <a

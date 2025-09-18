@@ -2,14 +2,12 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 3rem 1rem;
-    color: #222;
 }
 
 .title {
     font-family: 'Great Vibes', cursive;
     text-align: center;
     margin-bottom: 2.5rem;
-    color: #333;
 }
 
 .contactGrid {
@@ -24,11 +22,10 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    background-color: white;
     padding: 1rem 1.5rem;
+    border: 2px white solid;
     border-radius: 12px;
     text-decoration: none;
-    color: #222;
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     transition: all 0.2s ease;
     font-size: 1rem;

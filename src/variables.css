@@ -1,0 +1,13 @@
+:root {
+    --bg: #ffffff;
+    --text: #222;
+    --header-bg: rgba(255, 255, 255, 0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #121212;
+        --text: #eee;
+        --header-bg: rgb(35, 35, 35, 0.9);
+    }
+}

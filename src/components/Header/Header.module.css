@@ -1,5 +1,6 @@
 .header {
     position: fixed;
+    background-color: var(--header-bg);
     top: 0;
     left: 0;
     width: 100%;
@@ -7,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
     overflow: visible;
@@ -22,7 +22,7 @@
 }
 
 .button {
-    background-color: white;
+    background: none;
     border: none;
     font-size: 2.4rem;
     cursor: pointer;

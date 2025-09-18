@@ -6,24 +6,24 @@ export default function Contacts() {
         <div className={styles.contacts}>
             <h2 className={styles.title}>Контакты</h2>
             <div className={styles.contactGrid}>
-                <a href="https://t.me/DafaSun" target="_blank" className={styles.contactItem} rel="noreferrer">
+                <a href="https://t.me/zenovskaad" target="_blank" className={styles.contactItem} rel="noreferrer">
                     <FaTelegramPlane className={`${styles.icon} ${styles.telegram}`} />
-                    <span>@DafaSun</span>
+                    <span>@zenovskaad</span>
                 </a>
 
-                <a href="mailto:dafasun97531@gmail.com" className={styles.contactItem}>
+                <a href="mailto:zenovskaad@gmail.com" className={styles.contactItem}>
                     <FaEnvelope className={`${styles.icon} ${styles.email}`} />
-                    <span>dafasun97531@gmail.com</span>
+                    <span>zenovskaad@gmail.com</span>
                 </a>
 
-                <a href="https://vk.com/dafasun" target="_blank" className={styles.contactItem} rel="noreferrer">
+                <a href="https://vk.com/zenovskaad" target="_blank" className={styles.contactItem} rel="noreferrer">
                     <FaVk className={`${styles.icon} ${styles.vk}`} />
                     <span>VK</span>
                 </a>
             </div>
 
             <div className={styles.contactGrid}>
-                <a href="https://github.com/DafaSun" target="_blank" className={styles.contactItem} rel="noreferrer">
+                <a href="https://github.com/zenovskaad" target="_blank" className={styles.contactItem} rel="noreferrer">
                     <FaGithub className={`${styles.icon} ${styles.github}`} />
                     <span>GitHub</span>
                 </a>

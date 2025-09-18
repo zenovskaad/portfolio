@@ -1,7 +1,8 @@
 import styles from './Education.module.css';
-import diplomaImg from '../../assets/diploma.png';
+import diplomaImg from '../../assets/diploma.jpg';
 
 export default function Education() {
+
     return (
         <div className={styles.education}>
             <h2 className={styles.title}>Образование</h2>
