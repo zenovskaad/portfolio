@@ -16,7 +16,7 @@ export default function AboutMe() {
                         <li><strong>Дата рождения:</strong> 10 февраля 2003</li>
                         <li><strong>Пол:</strong> Женщина</li>
                         <li><strong>Город:</strong> Красноборск</li>
-                        <li><strong>Телефон:</strong> +7 (950) 258-8011</li>
+                        <li><strong>Телефон:</strong> +7 (921) 471-80-11</li>
                         <li><strong>Email:</strong> zenovskaad@gmail.com</li>
                         <li><strong>Telegram:</strong> <a href="https://t.me/zenovskaad" target="_blank" rel="noreferrer">@zenovskaad</a></li>
                         <li><strong>GitHub:</strong> <a href="https://github.com/zenovskaad" target="_blank" rel="noreferrer">github.com/zenovskaad</a></li>
@@ -32,7 +32,7 @@ export default function AboutMe() {
 
                             setTimeout(() => {
                                 btn?.classList.remove(styles.loading);
-                            }, 1500); // Убираем анимацию через 1.5 секунды
+                            }, 1500);
                         }}
                     >
                         <TiArrowDownThick />
