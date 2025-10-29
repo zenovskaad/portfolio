@@ -30,7 +30,7 @@ export default function Contacts() {
 
                 <div className={styles.contactItem}>
                     <FaPhone className={`${styles.icon} ${styles.phone}`} />
-                    <span>+7 (950) 258-80-11</span>
+                    <span>+7 (921) 471-80-11</span>
                 </div>
             </div>
         </div>
