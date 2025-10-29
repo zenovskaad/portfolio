@@ -13,6 +13,10 @@ import vkrImg1 from '../../assets/projects/vkr/img1.png';
 import vkrImg2 from '../../assets/projects/vkr/img2.png';
 import vkrImg3 from '../../assets/projects/vkr/img3.png';
 import vkrImg4 from '../../assets/projects/vkr/img4.png';
+import sportCourseImg1 from '../../assets/projects/sportCourse/sportCourseImg1.jpg'
+import sportCourseImg2 from '../../assets/projects/sportCourse/sportCourseImg2.jpg'
+import sportCourseImg3 from '../../assets/projects/sportCourse/sportCourseImg3.jpg'
+import sportCourseImg4 from '../../assets/projects/sportCourse/sportCourseImg4.jpg'
 
 const projectsList = [
     {
@@ -46,6 +50,14 @@ const projectsList = [
         codeLink: 'https://github.com/zenovskaad/vkr-frontend',
         // pageLink: 'https://zenovskaad.github.io/vkr-frontend/',
         imagesList: [vkrImg1, vkrImg2, vkrImg3, vkrImg4],
+    },
+    {
+        title: 'Рекламная страница курса с CSS анимацией',
+        description: 'Рекламная страница спортивного курса с акцией, пропадающей через некоторое время, а также с подсветкой карточек и кнопок',
+        stack: ['React', 'TypeScript', 'Vite', 'CSS', 'JSX', 'API'],
+        codeLink: 'https://github.com/zenovskaad/sportCoursePage',
+        // pageLink: 'https://zenovskaad.github.io/sportCoursePage/',
+        imagesList: [sportCourseImg1, sportCourseImg2, sportCourseImg3, sportCourseImg4],
     },
 ];
 

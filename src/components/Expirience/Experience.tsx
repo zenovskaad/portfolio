@@ -18,7 +18,6 @@ export default function Experience() {
                 stack="React, JavaScript, TypeScript, Redux, REST API, HTML, CSS, SQL"
             />
 
-            {/* Добавляй новые <Job /> по аналогии */}
         </div>
     );
 }
