@@ -56,7 +56,7 @@ const projectsList = [
         description: 'Рекламная страница спортивного курса с акцией, пропадающей через некоторое время, а также с подсветкой карточек и кнопок',
         stack: ['React', 'TypeScript', 'Vite', 'CSS', 'JSX', 'API'],
         codeLink: 'https://github.com/zenovskaad/sportCoursePage',
-        // pageLink: 'https://zenovskaad.github.io/sportCoursePage/',
+        pageLink: 'https://zenovskaad.github.io/sportCoursePage/',
         imagesList: [sportCourseImg1, sportCourseImg2, sportCourseImg3, sportCourseImg4],
     },
 ];
